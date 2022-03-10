@@ -1,27 +1,34 @@
-# CourseManager
+# Codigo em construção...
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.5.
 
-## Development server
+## CourseManager
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Projeto desenvolvido com Angular CLI v13.2.5
 
-## Code scaffolding
+## Servidor de Desenvolvimento
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Rodando no ng server
 
-## Build
+## Atividades
+Projeto de criação de site com Angular, estou fazendo uma plataforma de site de cursos, com a implementação e criação de componentes, colocação de dados e imagens estáticas.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Foi utilizado
+-Font-Awesome (foi utilizado os ícones).
+-Bootstrap (para rodar a aplicação)
+-ng (para fazer a simulação da web aplicação)
+-npm (Instalador de Pacotes)
 
-## Running unit tests
+##Futuras atividades
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+-Trata eventos databinding
+-Transformando datas com pipes
+-rotas com guard
+-Uso de rotas
+-Formulários e templates
+-Requisições HTTPS 
+-Resolução de erros
 
-## Running end-to-end tests
+## Mais ajuda
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para obter mais ajuda sobre a CLI Angular, use `ng help` ou confira a página [Visão Geral da CLI Angular e Referência de Comando](https://angular.io/cli).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
