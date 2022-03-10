@@ -7,4 +7,5 @@ export class Course {
     code!: number;
     rating!: number;
     releaseDate!: string;
+    description!: string;
 }

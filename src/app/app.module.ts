@@ -4,8 +4,7 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { CourseListComponent } from './course-list/course-list.component';
 import { starComponent } from './star/star.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
+import { courseService } from './course-list/course.service';
 
 @NgModule({
   declarations: [
@@ -15,10 +14,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    FontAwesomeModule
+    FormsModule
   ],
-  providers: [],
+  providers: [courseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
