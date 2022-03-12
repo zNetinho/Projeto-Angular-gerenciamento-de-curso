@@ -1,0 +1,40 @@
+o angular fornece duas rotas padrão '**' e a '' que e a primeira e pra quando não encontra uma pagina solicitada pelo usuario e outra e para direcionar diretamente para base da pagina pro host,
+para navegar entre os componente precisa definir as rotas dentro routermodule/ forroot ele recebe um array pra declarar rotas que ja vem com as duas padrão
+descartando assim a necessidade de usar um selector e um componente pois vai usar via trig de rotas de routermodule.
+e importante informar para aplicação onde se dee fazer o switch com o <router-outlet>, local varia de acordo com a necessidade do projeto.
+
+
+podemos linkar uma rota no componente, ai precisamos informar o angular informar que ela recebera e preciso passar um pathvariable e preciso informar o parametro e da onde vai receber o valor
+usar quando for pegar o parametro no componente pelo mesmo nome que usou, usando path variable e necesasario usaro activatedRouter para pegar as informções
+uma nova rota diferente uma rota de path variable passando o componente que ele vai triga, e assim pegar os parametros setados no componente parammap e para pegar os parametros da rota definir
+podemos usar o routerlink atctivie para colocarmos alguma classe ou dinamicidade na pagina 
+
+forchild() carrega routermodule como ele não e o modulo pai pode importar le e sera carregado assim que o router for ativado, a criação de um modulo para cada aplicação do web seprar cada componente pelos
+criando o modulo curso foi feito tudo os itens do modulo de cursos dentro desse module, retirando assim os componentes declarados no modulo (pai)
+erros- importar os mesmos componente duas vezez, esquecer de importar os componentes nos modulo.
+
+shared, contem componentes pequenos e genericos mas que possa ussar em varios locais na aplicação, componente que podem ser usados mais que uma vez assim como pipe e autenticações
+importar somente os modulos que vc precisa, segregar a aplicação em modulos separados para nao sobrecarregar o module pai
+
+
+
+
+
+ export, codigo pra informar o angular que vc deseja exportar o seu arrquivo dentro de outros modulos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+((import { AnyTxtRecord } from 'dns';))
