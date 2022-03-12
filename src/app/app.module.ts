@@ -1,22 +1,31 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
-import { CourseListComponent } from './course-list/course-list.component';
-import { starComponent } from './star/star.component';
-import { courseService } from './course-list/course.service';
+import { CourseModule } from './course/course.module';
+import { CoreModule } from './core/core.module';
+import { Error404Compoennt } from './core/component/error-404/error-404.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CourseListComponent,
-    starComponent
+    Error404Compoennt
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      {
+        path: '', redirectTo: 'courses', pathMatch: 'full'
+      }, {
+        path: '**', component: Error404Compoennt
+      }
+    ]),
+    CourseModule,
+    CoreModule
   ],
-  providers: [courseService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
