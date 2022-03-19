@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class CourseService { 
 
-    private coursesUrl: string = 'http://localhost:4200/api/courses';
+    private coursesUrl: string = 'http://localhost:3100/api/courses';
 
     constructor(private httpClient: HttpClient) { }
 
@@ -17,7 +17,7 @@ export class CourseService {
         return this.httpClient.get<Course[]>(this.coursesUrl);
     }
 
-    retrieveById(id: number): Observable<Course> { 
+    retrieveById(id: any): Observable<Course> { 
         return this.httpClient.get<Course>(`${this.coursesUrl}/${id}`);
     }
 
